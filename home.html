@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static',filename='files/css/style1.css')}}">
+</head>
+<body>
+    <form action="/" method="POST">
+        <center>
+            <img src="{{url_for('static',filename='files/css/images/img.png')}}">
+        </center>
+        <div class="calc">
+        <div class="box">
+            <h1 class="head">Calculator</h1>
+            <div class="form">
+                 <label>IA_1</label>
+                 <input type="text" name="one" class="form-control"> {{ ones }} <br>
+            </div>
+            <div class="form">
+                 <label>IA_2</label>
+                 <input type="text" name="two" class="form-control"> {{ twos }} <br>
+            </div>
+            <div class="form">
+                 <label>ASS_1</label>
+                 <input type="text" name="ass" class="form-control"> {{ As }} <br>
+            </div>
+            <div class="form-end">
+                 <input type="submit" value="Calculate" class="button button1">
+                 <input type="file" name="input-file" value="choose file" class="button button2">
+            </div>
+        </div>
+        </div>
+    </form>
+</body>
+</html>

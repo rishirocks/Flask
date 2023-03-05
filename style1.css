@@ -1,0 +1,56 @@
+.calc{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+.box{
+   height: 500px;
+   width: 300px;
+   outline: none;
+   border: none;
+   background-color: #00CED1;
+   border-radius: 30px;
+   box-shadow: inset -5px -5px 12px #ffffff ,
+               inset 5px 5px 12px #ffffff;
+}
+.head{
+  @import url{"https://fonts.googleapis.com/css/css?family=Montserrat:300,400,700&display=swap"};
+  color: MidnightBlue;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Montserrat' ,sans-serif ;
+  text-align: center;
+}
+.form{
+ margin-bottom: 10px;
+ text-align: center;
+}
+.button1{
+  background-color: Orange;
+  size: 30px;
+  border-radius: 5px;
+  width: 80px;
+  border-color: transparent;
+  position: absolute;
+  left: 600px;
+  margin-top: 20px;
+}
+.button1:hover{
+   color: white;
+}
+.button2{
+  background-color:Orange;
+  size: 30px;
+  border-radius: 5px;
+  width: 80px;
+  border-color: transparent;
+  position: absolute;
+  left: 700px;
+  margin-top: 20px;
+}
+.button2:hover{
+  color:white;
+}
+.form-control{
+  width: 60px;
+}
