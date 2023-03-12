@@ -6,31 +6,23 @@
     <link rel="stylesheet" href="{{url_for('static',filename='files/css/style1.css')}}">
 </head>
 <body>
-    <form action="/" method="POST">
-        <center>
-            <img src="{{url_for('static',filename='files/css/images/img.png')}}">
-        </center>
-        <div class="calc">
+    <form action="/" method="POST" enctype="multipart/form-data">
+          <img src="{{url_for('static',filename='files/css/images/img.png')}}" class="img">
+          <h1 class="head">Marks Entry</h1>
+           <p class="entry">Last Entry:{{ Reg_no }} , {{ IA_one }} , {{ IA_two }} , {{ Assign }}</p>
         <div class="box">
-            <h1 class="head">Calculator</h1>
-            <div class="form">
-                 <label>IA_1</label>
-                 <input type="text" name="one" class="form-control"> {{ ones }} <br>
-            </div>
-            <div class="form">
-                 <label>IA_2</label>
-                 <input type="text" name="two" class="form-control"> {{ twos }} <br>
-            </div>
-            <div class="form">
-                 <label>ASS_1</label>
-                 <input type="text" name="ass" class="form-control"> {{ As }} <br>
-            </div>
+              <label class="box-label">Reg_no</label>
+              <input type="number" id="Reg_no" name="Reg_no" class="box-input"><br>
+              <label class="box-label">IA_1</label>
+              <input type="number" id="IA_1" name="IA_1" class="box-input"><br>
+              <label class="box-label">IA_2</label>
+              <input type="number" id="IA_2" name="IA_2" class="box-input"><br>
+              <label class="box-label">ASS_1</label>
+              <input type="number" id="Assign" name="Assign" class="box-input"><br>
             <div class="form-end">
-                 <input type="submit" value="Calculate" class="button button1">
-                 <input type="file" name="input-file" value="choose file" class="button button2">
+              <input type="submit" Value="Upload" class="button2">
             </div>
         </div>
-        </div>
-    </form>
+        </form>
 </body>
 </html>
