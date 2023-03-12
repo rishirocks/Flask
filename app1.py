@@ -1,10 +1,6 @@
-import pandas as pd
-import os
-from flask import Flask,render_template,request,send_file,make_response
-from openpyxl.worksheet.worksheet import Worksheet
-from openpyxl import Workbook,load_workbook
-from io import BytesIO
-from pathlib import Path
+from flask import Flask,render_template,request
+from openpyxl import load_workbook
+
 
 app = Flask(__name__)
 wb = load_workbook('Marks.xlsx')
